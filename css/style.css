@@ -1,0 +1,125 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos generales */
+
+body{
+    background-color: black;
+    color: whitesmoke;
+}
+
+/* header */
+
+header{
+    margin: 10px;
+    height: 150px;
+    background-color: rgb(114, 114, 236);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+}
+
+header img{
+    width: 25%;
+}
+
+header nav ul{
+    padding: 20px;
+    list-style: none;
+    color: whitesmoke;
+    display: flex;
+    gap: 20px;
+}
+
+/* estilos de main */
+
+main .contenedor-galeria{
+    height: 70vh;
+    margin: 30px 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 23%);
+    row-gap: 1.5rem;
+    align-content: center;
+}
+
+main div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main .img-dos, main .img-cinco{
+    display: none;
+}
+
+main .textos{
+    text-align: left;
+}
+
+main .form{
+    margin: 0px;
+    padding: 10px;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+}
+
+
+main .contenedor-discografia{
+    padding: 30px;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* estilos de footer */
+
+footer{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+}
+
+a{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+}
+
+/* estilos de desktop */
+
+@media screen and (min-width: 1024px){
+    main .img-dos, main .img-cinco{
+        display: block;
+    }
+
+    main{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 30% 30% 20%;
+    }
+
+    main .img-uno, main .img-tres{
+        grid-row: span 2;
+    }
+
+    main .img-dos, main .img-cuatro{
+        grid-column: span 1;
+    }
+
+    main .img-cinco{
+        grid-column: span 3;
+    }
+}

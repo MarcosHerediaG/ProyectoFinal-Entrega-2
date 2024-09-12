@@ -38,7 +38,7 @@ header nav ul{
 
 /* estilos de main */
 
-main .contenedor-galeria{
+.contenedor-galeria{
     height: 70vh;
     margin: 30px 30px;
     display: grid;

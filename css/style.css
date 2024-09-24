@@ -8,7 +8,7 @@
 /* estilos generales */
 
 body{
-    background-color: black;
+    background-color: #212529;
     color: whitesmoke;
 }
 
@@ -97,6 +97,15 @@ a{
     display: flex;
     justify-content: left;
     text-align: left;
+}
+
+/* estilos de tablet */
+@media screen and (min-width:600px) {
+    main{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2, 50%);
+        column-gap: 1.5rem;
+    }
 }
 
 /* estilos de desktop */

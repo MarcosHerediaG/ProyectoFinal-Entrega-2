@@ -1,8 +1,12 @@
+  //import de listas
+  @import "../utilidades/variables";
+  
+  
   /* estilos generales */
 
 body {
-    background-color: #212529;
-    color: whitesmoke;
+    background-color: $background-color;
+    color: $text-color;
   }
 
   /* header */
@@ -10,7 +14,7 @@ body {
 header {
     margin: 10px;
     height: 150px;
-    background-color: rgb(114, 114, 236);
+    background-color: $primary-color;
     display: flex;
     justify-content: space-between;
     align-items: center;
